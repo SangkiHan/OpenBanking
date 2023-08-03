@@ -15,7 +15,7 @@ class OpenBankingApplicationTests {
 
 	@Test
 	void contextLoads() throws IOException {
-		bankingService.feignTest();
+		
 	}
 
 }

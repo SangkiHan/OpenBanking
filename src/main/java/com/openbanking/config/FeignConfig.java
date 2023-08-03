@@ -12,11 +12,11 @@ public class FeignConfig {
         return Logger.Level.FULL;
     }
 
-    @Bean
-    public RequestInterceptor requestInterceptor() {
-        return requestTemplate -> {
-            requestTemplate.header("Content-Type", "application/json");
-            requestTemplate.header("Accept", "application/json");
-        };
-    }
+//    @Bean
+//    public RequestInterceptor requestInterceptor() {
+//        return requestTemplate -> {
+//            requestTemplate.header("Content-Type", "application/json");
+//            requestTemplate.header("Accept", "application/json");
+//        };
+//    }
 }

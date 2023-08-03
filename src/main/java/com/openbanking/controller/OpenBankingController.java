@@ -30,8 +30,7 @@ public class OpenBankingController {
 	
 	@GetMapping("/authResult")
 	@ResponseBody
-	public String authResult(String code, String client_info) throws IOException {
-		
+	public String authResult(String code) throws IOException {
 		Authorize authorize = new Authorize(code, client_id, client_secret, redirect_uri, grant_type);
 		bankingService.getToken(authorize);
 		
