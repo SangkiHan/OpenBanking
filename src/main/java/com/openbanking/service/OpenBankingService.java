@@ -21,7 +21,7 @@ public class OpenBankingService {
 	
 	public void getToken(Authorize authorize) throws IOException {
 		Response feignResponse = openbankingFeignCall.getToken(authorize);
-		String textBody = extractContent(feignResponse); 
+		String textBody = extractContent(feignResponse);
 		return;
 	}
 	

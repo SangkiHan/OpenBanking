@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://218.155.95.66:3306/openbanking?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: Navskd1048!
+  jpa:
+    open-in-view: false
+    show-sql: true
+    datasource: mysql
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 100
+        jdbc:
+          exception-handling: ignore
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
+
+openbanking:
+  url: 'https://testapi.openbanking.or.kr'
+  name: OpenBanking
+  version: /2.0
+  client_id: 816e6e4d-56a5-47dd-a900-855893faacd9
+  client_secret: 5e55a82a-c807-4efa-a4ac-1239c60e555b
+  redirect_uri: 'http://localhost:8080/authResult'

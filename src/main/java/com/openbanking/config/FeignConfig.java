@@ -3,7 +3,6 @@ package com.openbanking.config;
 import org.springframework.context.annotation.Bean;
 
 import feign.Logger;
-import feign.RequestInterceptor;
 
 public class FeignConfig {
 
