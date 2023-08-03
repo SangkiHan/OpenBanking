@@ -1,4 +1,4 @@
-package com.openbanking.exception;
+package com.openbanking.global.exception;
 
 import lombok.Getter;
 

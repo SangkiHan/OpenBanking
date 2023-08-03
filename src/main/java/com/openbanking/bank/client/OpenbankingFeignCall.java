@@ -1,11 +1,11 @@
-package com.openbanking.client;
+package com.openbanking.bank.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.openbanking.config.FeignConfig;
-import com.openbanking.dto.Authorize;
+import com.openbanking.bank.dto.Authorize;
+import com.openbanking.global.config.FeignConfig;
 
 import feign.Response;
 

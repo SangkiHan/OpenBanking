@@ -1,4 +1,4 @@
-package com.openbanking.config;
+package com.openbanking.global.config;
 
 import org.springframework.context.annotation.Bean;
 

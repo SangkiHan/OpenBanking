@@ -1,4 +1,4 @@
-package com.openbanking.entity;
+package com.openbanking.global.entity;
 
 import java.time.LocalDateTime;
 

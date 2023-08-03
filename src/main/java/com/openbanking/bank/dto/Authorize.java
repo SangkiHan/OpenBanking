@@ -1,4 +1,4 @@
-package com.openbanking.dto;
+package com.openbanking.bank.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

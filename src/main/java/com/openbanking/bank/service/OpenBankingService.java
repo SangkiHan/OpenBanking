@@ -1,4 +1,4 @@
-package com.openbanking.service;
+package com.openbanking.bank.service;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -7,8 +7,8 @@ import java.io.IOException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StreamUtils;
 
-import com.openbanking.client.OpenbankingFeignCall;
-import com.openbanking.dto.Authorize;
+import com.openbanking.bank.client.OpenbankingFeignCall;
+import com.openbanking.bank.dto.Authorize;
 
 import feign.Response;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +19,7 @@ public class OpenBankingService {
 	
 	private final OpenbankingFeignCall openbankingFeignCall;
 	
+	@SuppressWarnings("unused")
 	public void getToken(Authorize authorize) throws IOException {
 		Response feignResponse = openbankingFeignCall.getToken(authorize);
 		String textBody = extractContent(feignResponse);

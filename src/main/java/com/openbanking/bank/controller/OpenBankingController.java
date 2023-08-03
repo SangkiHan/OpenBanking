@@ -1,4 +1,4 @@
-package com.openbanking.controller;
+package com.openbanking.bank.controller;
 
 import java.io.IOException;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.openbanking.dto.Authorize;
-import com.openbanking.service.OpenBankingService;
+import com.openbanking.bank.dto.Authorize;
+import com.openbanking.bank.service.OpenBankingService;
 
 import lombok.RequiredArgsConstructor;
 

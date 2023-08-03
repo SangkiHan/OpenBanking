@@ -1,4 +1,4 @@
-package com.openbanking.exception;
+package com.openbanking.global.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
