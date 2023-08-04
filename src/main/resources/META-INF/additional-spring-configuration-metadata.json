@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "decorator.datasource.p6spy.enable-logging",
+    "type": "java.lang.String",
+    "description": "A description for 'decorator.datasource.p6spy.enable-logging'"
+  },
+  {
+    "name": "openbanking.url",
+    "type": "java.lang.String",
+    "description": "A description for 'openbanking.url'"
+  },
+  {
+    "name": "openbanking.name",
+    "type": "java.lang.String",
+    "description": "A description for 'openbanking.name'"
+  },
+  {
+    "name": "openbanking.version",
+    "type": "java.lang.String",
+    "description": "A description for 'openbanking.version'"
+  },
+  {
+    "name": "openbanking.client_secret",
+    "type": "java.lang.String",
+    "description": "A description for 'openbanking.client_secret'"
+  },
+  {
+    "name": "openbanking.redirect_uri",
+    "type": "java.lang.String",
+    "description": "A description for 'openbanking.redirect_uri'"
+  },
+  {
+    "name": "openbanking.client_id",
+    "type": "java.lang.String",
+    "description": "A description for 'openbanking.client_id'"
+  },
+  {
+    "name": "spring.jpa.datasource",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.datasource'"
+  }
+]}

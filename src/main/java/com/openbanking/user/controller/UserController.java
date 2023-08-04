@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.openbanking.user.dto.UserDto;
 import com.openbanking.user.service.UserService;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -14,6 +15,11 @@ import lombok.RequiredArgsConstructor;
 public class UserController {
 	
 	private final UserService userService;
+	
+	@PostMapping("/login")
+	public void login(HttpServletRequest request, String userId) {
+		userService.login(request, userId);
+	}
 	
 	@PostMapping("/save")
 	public void save(@RequestBody UserDto request) {

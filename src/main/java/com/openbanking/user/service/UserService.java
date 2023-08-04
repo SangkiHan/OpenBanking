@@ -8,6 +8,8 @@ import com.openbanking.user.dto.UserDto;
 import com.openbanking.user.entity.User;
 import com.openbanking.user.repository.UserRepository;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -27,5 +29,12 @@ public class UserService {
 		
 		user.setToken(access_token, refresh_token);
 	}
-
+	
+	public void login(HttpServletRequest request, String userId) {
+		User user = userRepository.findById(userId)
+				.orElseThrow(() -> new GlobalException(ErrorCode.USER_UNKNOWN));
+		
+		HttpSession session = request.getSession();
+		session.setAttribute("userId", user.getUserId());
+	}
 }
